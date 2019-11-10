@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*$6)%)nay!^$+340x5oj(xf5o$+gkpi!o=n*k119g%n%lg%&#c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-#changed - ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+# changed - ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', '*' ]
 
 
 # Application definition
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-#changed TIME_ZONE = 'UTC'
+# changed TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
@@ -121,5 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-#changed - added line below
+# changed - added line below
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
